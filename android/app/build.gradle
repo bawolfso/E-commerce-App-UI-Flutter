@@ -60,4 +60,12 @@ flutter {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation(name: 'eiandroidsdk-debug', ext: 'aar')
+    api 'com.google.code.gson:gson:2.8.1'
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
 }
